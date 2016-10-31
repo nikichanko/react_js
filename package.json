@@ -1,0 +1,23 @@
+{
+  "name": "react_js",
+  "version": "1.0.0",
+  "description": "reactjs learning",
+  "main": "react.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikichanko/react_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikichanko/react_js/issues"
+  },
+  "homepage": "https://github.com/nikichanko/react_js#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
