@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {User, LoginControl} from './User';
+import {User, LoginControl, Calculator} from './User';
 import './index.css';
 
 ReactDOM.render(
@@ -28,5 +28,11 @@ ReactDOM.render(
 ReactDOM.render(
   <LoginControl />,
   document.getElementById('root3')
+);
+
+
+ReactDOM.render(
+  <Calculator />,
+  document.getElementById('root4')
 );
 
