@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import User from './User';
+import {User, LoginControl} from './User';
 import './index.css';
 
 ReactDOM.render(
@@ -24,3 +24,9 @@ ReactDOM.render(
     author={comment.author} />,
   document.getElementById('root2')
 );
+
+ReactDOM.render(
+  <LoginControl />,
+  document.getElementById('root3')
+);
+
