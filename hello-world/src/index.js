@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import {User, LoginControl, Calculator} from './User';
+import FBLogin from './FacebookComponent';
 import './index.css';
 
 ReactDOM.render(
@@ -34,5 +35,11 @@ ReactDOM.render(
 ReactDOM.render(
   <Calculator />,
   document.getElementById('root4')
+);
+
+
+ReactDOM.render(
+  <FBLogin />,
+  document.getElementById('root5')
 );
 

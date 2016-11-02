@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+var $ = require('jquery');
 
 function formatDate(date) {
   return date.toLocaleDateString();
@@ -54,6 +56,15 @@ export class LoginControl extends Component {
 
   handleLoginClick() {
     this.setState({isLoggedIn: true});
+  }
+
+  componentWillUnmount(){
+    $(ReactDOM.findDOMNode(this)).find('button').removeClass('niki');
+  }
+
+  componentDidMount() {
+    console.log($(ReactDOM.findDOMNode(this)).find('button'));
+    $(ReactDOM.findDOMNode(this)).find('button').addClass('niki');
   }
 
   handleLogoutClick() {

@@ -1,8 +1,8 @@
-// CheckboxWithLabel.js
+// CheckboxWithLabel_new.js
 
 import React from 'react';
 
-export default class CheckboxWithLabel extends React.Component {
+export default class CheckboxWithLabel_new extends React.Component {
 
   constructor(props) {
     super(props);
