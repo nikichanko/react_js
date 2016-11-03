@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {User, LoginControl, Calculator} from './User';
-import FBLogin from './FacebookComponent';
+import {User, LoginControl, Calculator, TodoList, ReactH1} from './User';
+import FacebookLogin from './FacebookComponent';
 import './index.css';
 
 ReactDOM.render(
@@ -38,8 +38,27 @@ ReactDOM.render(
 );
 
 
+const facebook_options = {
+  socialId: "582584571930800",
+  responseHandler: (response) => {
+    console.log(response);
+  }
+}
+
 ReactDOM.render(
-  <FBLogin />,
+  <FacebookLogin options={facebook_options} />,
   document.getElementById('root5')
 );
+
+
+ReactDOM.render(
+  <TodoList />,
+  document.getElementById('root6')
+);
+
+ReactDOM.render(
+  <ReactH1 />,
+  document.getElementById('root7')
+);
+
 
