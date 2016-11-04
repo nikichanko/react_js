@@ -268,8 +268,8 @@ export class ReactH1 extends Component{
       transitionName="example2"
       transitionAppear={true}
       transitionAppearTimeout={500}
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={500}>
+      transitionEnterTimeout={false}
+      transitionLeaveTimeout={false}>
       <h1>Fading at Initial Mount</h1>
     </ReactCSSTransitionGroup>
   );
